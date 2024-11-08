@@ -1,0 +1,120 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+.snow_wrap{
+    height: 100vh;
+    width: 100%;
+    background-image: url('imagens/secundaria.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    position: relative;
+    overflow: hidden;
+}
+.snow, .snow:after, .snow:before {
+    content: "";
+    position: absolute;
+    top: -650px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+    radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+    radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+    radial-gradient(3px 3px at 300px 250px, #fff, transparent),
+    radial-gradient(4px 4px at 400px 350px, #fff, transparent),
+    radial-gradient(6px 6px at 500px 100px, #fff, transparent),
+    radial-gradient(3px 3px at 50px 200px, #fff, transparent),
+    radial-gradient(4px 4px at 150px 300px, #fff, transparent),
+    radial-gradient(6px 6px at 250px 400px, #fff, transparent),
+    radial-gradient(3px 3px at 350px 500px, #fff, transparent);
+    background-size: 650px 650px;
+    
+    animation: snowAnim 3s linear infinite;
+}
+.snow:after {
+    margin-left: -250px;
+    opacity: 0.5;
+    filter: blur(2px); 
+    animation-direction: reverse;  
+    animation-duration: 6s;
+}
+.snow:before {
+    margin-left: -350px;
+    opacity: 0.7;
+    filter: blur(1px);   
+    animation-direction: reverse;  
+    animation-duration: 9s;
+}
+@keyframes snowAnim {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(650px);
+    }
+}
+/* Estilos para o container do botão */
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 2;
+}
+
+/* Estilos para o botão */
+button {
+    padding: 15px 30px;
+    background-color: #3b0404; 
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; 
+}
+
+button:active {
+    background-color: #3e8e41; 
+}
+
+/* Transição para o fade-out da página */
+.fade-out {
+    animation: fadeOutAnim 1s forwards;
+}
+
+@keyframes fadeOutAnim {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Container do Spotify */
+.spotify-container {
+    position: fixed;  
+    top: 10px;  
+    right: 10px;  
+    z-index: 9999; 
+    border-radius: 10px;  
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px; 
+}
+
+/* Ajuste do iframe */
+.spotify-container iframe {
+    border-radius: 12px;  
+}

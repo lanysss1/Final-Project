@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <title>Seu Presente Chegou!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+
+</head>
+<body>
+
+    <header>
+        <img src="imagens/keyLogo.png" alt="keyLogo" class="logo">
+        <h1>Seu Presente de Natal Chegou!</h1>
+        <!-- Adicionando o menu de navegação -->
+        <nav>
+            <ul>
+                <li><a href="gift.html">Gift</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre o 911 Dakar</a></li>
+                <li><a href="https://www.porsche.com/brazil/pt/models/911/911-dakar/911-dakar/">Especificações</a></li>
+                <li><a href="contato.html">Entre em contato conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="spotify-music">
+        <h3>Curta o momento ao som de "Last Christmas"<br>Dê um play para Melhor experiência!</h3>
+        <iframe 
+            src="https://open.spotify.com/embed/track/2FRnf9qhLbvw8fu4IBXx78?utm_source=generator" 
+            width="300" 
+            height="80" 
+            frameBorder="0" 
+            allow="encrypted-media"
+            allowtransparency="true"></iframe>
+    </section>
+
+    <main>
+        <section class="gift-arrival">
+            <h2>Feliz Natal! Seu Porsche 911 Dakar já chegou!</h2>
+            <p>Desejamos que você aproveite cada momento dessa nova experiência única.</p>
+            <img src="imagens/treeDakar.png" alt="Porsche 911 Dakar com decoração natalina">
+
+                   <!-- Botão estilizado para iniciar o vídeo -->
+        <button id="play-video-button" class="styled-button">Assista ao Vídeo</button>
+        
+        <!-- Área para exibir o vídeo -->
+        <div id="video-container" style="display: none; margin-top: 20px;">
+            <iframe 
+                id="video-frame"
+                width="560" 
+                height="315" 
+                src="" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+        </section>
+    </main> 
+
+    <section id="galeria" class="galeria" aria-labelledby="galeria">
+        <h2>Galeria de Imagens</h2>
+        <div class="imagem-container" role="group" aria-labelledby="galeria">
+            <div class="imagem-caixa">
+                <img src="imagens/back.png" alt="Vista traseira do Porsche 911 Dakar em um ambiente montanhoso" class="imagem-galeria">
+            </div>
+            <div class="imagem-caixa">
+                <img src="imagens/inside.png" alt="Interior do Porsche 911 Dakar interno com acabamentos esportivos e tecnologia avançada" class="imagem-galeria">
+            </div>
+            <div class="imagem-caixa">
+                <img src="imagens/sidePoggers.png" alt="Porsche 911 Dakar em movimento off-road, com rodas robustas" class="imagem-galeria">
+            </div>
+            <div class="imagem-caixa">
+                <img src="imagens/front.png" alt="Imagens traseira completa" class="imagem-galeria">
+            </div>
+            <div class="imagem-caixa">
+                <img src="imagens/side.png" alt="Exterior de lado" class="imagem-galeria">
+            </div>
+            <div class="imagem-caixa">
+                <img src="imagens/dakar.png" alt="logo interior" class="imagem-galeria">
+            </div>
+            <div class="imagem-caixa">
+                <img src="imagens/montanha.png" alt="O Porsche esta em um locol montanhoso" class="imagem-galeria">
+            </div>
+            <div class="imagem-caixa">
+                <img src="imagens/fast.png" alt="Em um clima desértico" class="imagem-galeria">
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 Porsche. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

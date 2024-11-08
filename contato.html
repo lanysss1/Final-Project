@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Seu Presente Chegou!</title>
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+    </header>
+
+    <main>
+        <section class="company-info">
+            <strong>
+                <h2>Informações da Empresa</h2>
+                <p>Bem-vindo ao site oficial da Porsche! Entre em contato conosco para saber mais sobre o Porsche 911 Dakar e outros modelos. Estamos aqui para ajudar a tornar sua experiência única.</p>
+                <p><strong>Endereço:</strong> Rua dos Porsches, 911, Cidade Velocidade</p>
+                <p><strong>Telefone:</strong> (11) 1234-5678</p>
+                <p><strong>Email:</strong> contato@porsche.com.br</p>
+            </strong>
+        </section>
+
+        <section class="contact-form">
+            <h2>Envie uma Mensagem</h2>
+            <form id="contactForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            <p id="formMessage" style="color: red;"></p>
+        </section>
+    </main>
+
+    <p><a href="index.html" target="_self"><strong>Voltar</strong></a></p>
+
+    <footer>
+        <p>&copy; 2024 Porsche. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

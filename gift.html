@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="gift.css">
+    <title>Efeito de Neve</title>
+</head>
+<body>
+    <div class="snow_wrap">
+        <div class="snow"></div>
+
+        <div class="button-container">
+            <button id="myButton"><strong>Seu Presente Chegoou!</strong></button>
+        </div>
+    </div>
+
+    <div class="spotify-container">
+        <iframe 
+            style="border-radius: 12px;" 
+            src="https://open.spotify.com/embed/track/6XjDF6nds4DE2BBbagZol6?utm_source=generator" 
+            width="300" 
+            height="80" 
+            frameborder="0" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+        </iframe>
+    </div>
+    
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            document.body.classList.add('fade-out');
+
+            setTimeout(function() {
+                window.location.href = 'index.html'; 
+            }, 1000); 
+        });
+    </script>
+</body>
+</html>

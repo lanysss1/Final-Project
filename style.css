@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('imagens/fundo.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 50px;
+    background-attachment: fixed;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 40px; 
+    justify-content: center; 
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 15px 20px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2a820f; /* Troca de cor ao passar o mouse */
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.443);
+    padding: 20px;
+}
+
+header .logo {
+    width: 200px;
+}
+
+main .gift-arrival {
+    background-color: rgba(0, 32, 83, 0.454);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+main .gift-arrival img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.spotify-music {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.443);
+    padding: 2px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+    
+}
+
+/* Contato.html */
+main {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    min-height: 80vh; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos gerais */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff72;
+    color: #000000;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Estilo da seção de informações da empresa */
+.company-info {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.company-info p {
+    margin: 10px 0;
+}
+
+/* Seção de formulário de contato */
+.contact-form {
+    max-width: 600px;
+    width: 100%;
+    background-color: #ffffff85;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; 
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Estilo dos campos do formulário */
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #000000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #06641f;
+}
+
+/* Mensagem de sucesso ou erro */
+#formMessage {
+    margin-top: 10px;
+    font-weight: bold;
+    color: red; 
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+    font-size: 0.9rem;
+}
+/* video */
+.styled-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.styled-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.styled-button:active {
+    background-color: #004080;
+    transform: scale(0.98);
+}
+
+/* galeria */
+.galeria {
+    padding: 30px;
+    background-color: #f8f8f86a; 
+    text-align: center; 
+}
+
+.imagem-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    gap: 20px; 
+    justify-items: center; 
+}
+
+.imagem-caixa {
+    width: 100%;
+    max-width: 300px; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    box-shadow: 0 6px 15px rgba(246, 245, 245, 0.1); 
+    background-color: rgba(255, 255, 255, 0); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagem-caixa:hover {
+    transform: scale(1.10); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); 
+}
+
+.imagem-galeria {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+.imagem-galeria:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
